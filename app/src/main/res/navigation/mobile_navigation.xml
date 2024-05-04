@@ -3,23 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/inicio2">
+    <fragment
+        android:id="@+id/inicio2"
+        android:name="francisco.nataren.emulador_20220594_francisco2.Inicio"
+        android:label="fragment_inicio2"
+        tools:layout="@layout/fragment_inicio2" />
+    <fragment
+        android:id="@+id/perfil"
+        android:name="francisco.nataren.emulador_20220594_francisco2.Perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="francisco.nataren.emulador_20220594_francisco2.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/informacion"
+        android:name="francisco.nataren.emulador_20220594_francisco2.Informacion"
+        android:label="fragment_informacion"
+        tools:layout="@layout/fragment_informacion" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="francisco.nataren.emulador_20220594_francisco2.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/contactanos"
+        android:name="francisco.nataren.emulador_20220594_francisco2.Contactanos"
+        android:label="fragment_contactanos"
+        tools:layout="@layout/fragment_contactanos" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="francisco.nataren.emulador_20220594_francisco2.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+
 </navigation>
+
+
